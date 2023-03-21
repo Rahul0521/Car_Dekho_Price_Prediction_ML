@@ -1,0 +1,126 @@
+
+/*
+ * Formatting the header area
+ */
+body {
+    text-align: center;
+    color:green;
+}
+form {
+    display: inline-block;
+}
+header {
+  background-color: #008000;
+  height: 35px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 10px;
+}
+header h1.logo {
+  margin: 0;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  float: left;
+}
+header h1.logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+/*
+ * Centering the body content
+ */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+div.home {
+  padding: 10px 0 30px 0;
+  background-color: #E6E6FA;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+div.about {
+  padding: 10px 0 30px 0;
+  background-color: #E6E6FA;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+h2 {
+  font-size: 3em;
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+h3 {
+  font-size: 1.7em;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #999;
+}
+.menu {
+  float: right;
+  margin-top: 8px;
+}
+.menu li {
+  display: inline;
+}
+.menu li + li {
+  margin-left: 35px;
+}
+.menu li a {
+  color: #444;
+  text-decoration: none;
+}
+button {
+  --c:  #229091; /* the color*/
+  
+  box-shadow: 0 0 0 .1em inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+}
+button:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+}
+button:active {
+  box-shadow: 0 0 9e9q inset #0009; 
+  background-color: var(--c);
+  color: #fff;
+}
+
+button {
+  font-family: system-ui, sans-serif;
+  font-size: 3.5rem;
+  cursor: pointer;
+  padding: .1em .6em;
+  font-weight: bold;  
+  border: none;
+}
+input[type=text] {
+  padding: 0;
+  height: 30px;
+  position: relative;
+  left: 0;
+  outline: none;
+  border: 1px solid #cdcdcd;
+  border-color: rgba(0, 0, 0, .15);
+  background-color: white;
+  font-size: 16px;
+}
+
+.advancedSearchTextbox {
+  width: 526px;
+  margin-right: -4px;
+}
